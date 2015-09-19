@@ -17,7 +17,7 @@ private
 def message_params
   #params[:message]のパラメーターでname, bodyのみを許可
   #返り値はex:) {name: "入力されたname",nody: "入力されたbody"}
-  params.require(message).permit(:name, :body)
+  params.require(:message).permit(:name, :body)
 end
 ##　ここまで
 end
