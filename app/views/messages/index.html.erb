@@ -13,12 +13,15 @@
       
 <%= message.body %>
 
+<%= message.age %>
+
         (
 <%= link_to "edit" , edit_message_path(message) %>
 
 <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してもよろしいですか？' } %>
 
 )
+
       <br>
     
 <% end %>
